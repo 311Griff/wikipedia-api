@@ -1,0 +1,175 @@
+//colors//
+$main: #07143A;
+$secondary: #2F4172;
+$tertiary: #6B7CA8;
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+body {
+  background: $main;
+  * {
+    transition: all 500ms ease;
+    font-family: 'Indie Flower';
+  }
+  h1 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 4px;
+    text-align: center;
+    color: white;
+  }
+  h2 {
+    font-family: 'Indie Flower';
+  }
+}
+
+#search {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+}
+
+a.random-option {
+  text-decoration: none;
+  display: inline-block;
+  color: #456;
+  border: 1px solid orange;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background: #efefef linear-gradient(to bottom, orange 30%, #6b7ca8 100%);
+  &:hover {
+    //margin-right: 20px;
+  }
+}
+
+.button-wrapper {
+  margin: 10px auto;
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+}
+
+#find-article {
+  border-radius: 5px 0px 0px 5px;
+  padding: 10px;
+  float: left;
+  &:focus {
+    @media(min-width: 767px) {
+      //transform: scale(1.1);
+      //margin-right: 20px;
+      //margin-left: 20px;
+    }
+    //width: 200px;
+  }
+}
+
+#find-article-button {
+  padding: 12px;
+  border: none;
+  color: $tertiary;
+  border-radius: 0px 5px 5px 0px;
+  background: #efefef;
+  cursor: pointer;
+  float: left;
+  margin-left: 0;
+  &:hover {
+    //animation: rotation-wheel 2s ease-in-out;
+    //transform: rotate(180deg);
+    background: #13274f;
+  }
+}
+
+.search-container {
+  margin: 0 auto;
+  width: 80%;
+  height: auto;
+  border-radius: 5px;
+  padding: 20px;
+  background: $secondary;
+}
+
+.copy {
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  @media(min-width: 767px) {
+    width: 60%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #0B183D;
+}
+
+#article-list {
+  list-style-type: none;
+}
+
+.article-item {
+  background: #efefef;
+  margin-bottom: 10px;
+}
+
+#search-result {
+  div {
+    background-color: $tertiary;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+  }
+  h2 {
+    color: white;
+    border-radius: 10px 5px;
+    padding: 15px;
+    background: $secondary;
+    border: 1px solid white;
+  }
+  a {
+    background: $secondary;
+    color: white;
+    padding: 10px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  p {
+    color: #efefef;
+    &.error {
+      color: red;
+      font-weight: 600;
+    }
+  }
+}
+
+/*@keyframes rotation-wheel {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(40deg);
+  }
+  30% {
+    transform: rotate(-30deg);
+  }
+  40% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(50deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  70% {
+    transform: rotate(40deg);
+  }
+  90% {
+    transform: rotate(-110deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}*/
